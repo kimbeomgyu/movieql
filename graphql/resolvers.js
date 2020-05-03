@@ -1,12 +1,9 @@
-const Student = {
-  name: "A",
-  age: 10,
-  gender: "man",
-};
+import { getStudents, getStudent } from "./db";
 
 const resolvers = {
   Query: {
-    student: () => Student,
+    students: getStudents,
+    student: getStudent,
   },
 };
 
