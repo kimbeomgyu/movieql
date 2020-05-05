@@ -16,3 +16,23 @@ export function getMovies() {
 export function getMovie(_, { id }) {
   return Movies.filter(({ id: uid }) => uid === id)[0];
 }
+
+export function deleteMovie(_, { id }) {
+  const clenedMovies = Movies.filter(({ id: uid }) => uid !== id);
+  if (Movies.length > clenedMovies.length) {
+    Movies = clenedMovies;
+    return true;
+  } else {
+    return false;
+  }
+}
+
+export function addMovie(_, { name, score }) {
+  const newMovie = {
+    id: Movies.length + 1,
+    name,
+    score,
+  };
+  Movies.push(newMovie);
+  return newMovie;
+}
