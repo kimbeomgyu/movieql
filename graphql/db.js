@@ -1,17 +1,18 @@
-const Student = [
-  { id: 1, name: "A", age: 10, gender: "man" },
-  { id: 2, name: "B", age: 15, gender: "woman" },
-  { id: 3, name: "C", age: 19, gender: "man" },
-  { id: 4, name: "D", age: 12, gender: "woman" },
-  { id: 5, name: "E", age: 16, gender: "woman" },
-  { id: 6, name: "F", age: 17, gender: "man" },
-  { id: 7, name: "G", age: 22, gender: "woman" },
-  { id: 8, name: "H", age: 9, gender: "woman" },
+let Movies = [
+  { id: 1, name: "Star Wars", score: 10 },
+  { id: 2, name: "Avengers", score: 5 },
+  { id: 3, name: "The Godfather", score: 9 },
+  { id: 4, name: "Logan", score: 8 },
+  { id: 5, name: "Spiderman", score: 6 },
+  { id: 6, name: "iron man", score: 7 },
+  { id: 7, name: "Bad Guys", score: 8 },
+  { id: 8, name: "Parasite", score: 9 },
 ];
 
-export function getStudents() {
-  return Student;
+export function getMovies() {
+  return Movies;
 }
-export function getStudent(_, { id }) {
-  return Student.filter(({ id: uid }) => uid === id)[0];
+
+export function getMovie(_, { id }) {
+  return Movies.filter(({ id: uid }) => uid === id)[0];
 }

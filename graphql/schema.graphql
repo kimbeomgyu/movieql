@@ -1,10 +1,10 @@
-type Student {
+type Movie {
+  id: Int!
   name: String!
-  age: Int!
-  gender: String!
+  score: Int!
 }
 
 type Query {
-  students: [Student]!
-  student(id: Int!): Student
+  movies: [Movie]!
+  movie(id: Int!): Movie
 }

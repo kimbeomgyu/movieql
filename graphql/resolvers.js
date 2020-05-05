@@ -1,9 +1,9 @@
-import { getStudents, getStudent } from "./db";
+import { getMovie, getMovies } from "./db";
 
 const resolvers = {
   Query: {
-    students: getStudents,
-    student: getStudent,
+    movies: getMovies,
+    movie: getMovie,
   },
 };
 
