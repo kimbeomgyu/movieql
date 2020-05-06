@@ -1,7 +1,7 @@
 type Movie {
   id: Int!
   title: String!
-  rating: Int!
+  rating: Float!
   runtime: Int!
   summary: String!
   medium_cover_image: String!
@@ -9,5 +9,6 @@ type Movie {
 }
 
 type Query {
-  movies: [Movie]!
+  movies(limit: Int, page: Int): [Movie]!
+  movie(id: Int!): Movie!
 }
