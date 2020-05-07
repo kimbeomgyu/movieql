@@ -5,6 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start:production": "NODE_PATH='production' && babel-node index.js && node index.js",
     "start": "nodemon --exec babel-node index.js"
   },
   "dependencies": {
