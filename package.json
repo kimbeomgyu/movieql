@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "start:production": "babel index.js -d dist",
-    "start": "nodemon --exec babel-node index.js"
+    "start:production": "babel src -d dist",
+    "start": "nodemon --exec babel-node src"
   },
   "dependencies": {
     "axios": "^0.19.2",
