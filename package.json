@@ -9,7 +9,7 @@
     "start": "nodemon --exec babel-node index.js"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "graphql-yoga": "^1.18.3"
   },
   "devDependencies": {
